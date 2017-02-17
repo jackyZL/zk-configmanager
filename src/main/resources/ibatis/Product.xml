@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.service.ProductRepository">
+    <select id="selectProductById" resultType="Product">
+        select * from product where id =#{id}
+
+        /*for update 实现数据库的悲观锁*/
+        <!--select * from product where id =#{id} for update -->
+    </select>
+    <update id="reduceNum" parameterType="Product">
+	update product set size=size-#{nums} where id=#{id}
+</update>
+</mapper>

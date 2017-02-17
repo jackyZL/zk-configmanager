@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 设置mybatis3 运行时的行为方式 -->
+    <settings>
+        <!-- 设置超时时间，它决定驱动等待一个数据库响应的时间 -->
+        <setting name="defaultStatementTimeout" value="60000"/>
+        <!-- 启用或禁用 缓存 -->
+        <setting name="cacheEnabled" value="false"/>
+        <!-- 启用或禁用延迟加载。当禁用时, 所有关联对象都会即时加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+    </settings>
+    <!-- 下面的typeAlias是示例，请在实际使用中去掉。-->
+    <typeAliases>
+        <typeAlias alias="CardFieldConfig" type="com.systoon.passport.pojo.CardFieldConfig"/>
+        <typeAlias alias="CardTemplate" type="com.systoon.passport.pojo.CardTemplate"/>
+        <typeAlias alias="UserCommonInformation" type="com.systoon.passport.pojo.UserCommonInformation"/>
+        <typeAlias alias="UserCommonLocation" type="com.systoon.passport.pojo.UserCommonLocation"/>
+        <typeAlias alias="ImServer" type="com.systoon.passport.pojo.ImServer"/>
+        <typeAlias alias="SubscribeCategory" type="com.systoon.passport.pojo.SubscribeCategory"/>
+        <typeAlias alias="SubscribeCategoryChannel" type="com.systoon.passport.pojo.SubscribeCategoryChannel"/>
+        <typeAlias alias="CardTemplateField" type="com.systoon.passport.pojo.CardTemplateField"/>
+        <typeAlias alias="Page" type="com.systoon.commons.handler.Page"/>
+        <typeAlias alias="SubscribeRecommend" type="com.systoon.passport.pojo.SubscribeRecommend"/>
+        <typeAlias alias="SubscribeSet" type="com.systoon.passport.pojo.SubscribeSet"/>
+        <typeAlias alias="User" type="com.systoon.passport.pojo.User"/>
+        <typeAlias alias="DeviceInfo" type="com.systoon.passport.parameter.DeviceInfo"/>
+        <typeAlias alias="Device" type="com.systoon.passport.pojo.Device"/>
+        <typeAlias alias="UserCard" type="com.systoon.passport.pojo.UserCard"/>
+        <typeAlias alias="UserCardRelation" type="com.systoon.passport.pojo.UserCardRelation"/>
+        <typeAlias alias="UserCardFieldValue" type="com.systoon.passport.pojo.UserCardFieldValue"/>
+        <typeAlias alias="UserCardTransfer" type="com.systoon.passport.pojo.UserCardTransfer"/>
+        <typeAlias alias="UserCollect" type="com.systoon.passport.pojo.UserCollect"/>
+        <typeAlias alias="UserCreateCardTotal" type="com.systoon.passport.pojo.UserCreateCardTotal"/>
+        <typeAlias alias="UserLog" type="com.systoon.passport.logger.pojo.UserLog"/>
+        <typeAlias alias="UserRegisterTotal" type="com.systoon.passport.pojo.UserRegisterTotal"/>
+        <typeAlias alias="UserSubscribe" type="com.systoon.passport.pojo.UserSubscribe"/>
+        <typeAlias alias="SecurityQuestion" type="com.systoon.passport.pojo.SecurityQuestion"/>
+        <typeAlias alias="UserLocationInfo" type="com.systoon.passport.parameter.UserLocationInfo"/>
+    </typeAliases>
+</configuration> 
+
+

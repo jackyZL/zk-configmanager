@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zk-configmanager:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="zk-configmanager-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zk-configmanager:war exploded" />
+    </root>
+  </artifact>
+</component>
