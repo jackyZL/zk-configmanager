@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
  *         执行所有共享锁的acquire()方法, 如果中间出现一个失败, 则将释放所有已require的共享锁;
  *         执行release()方法时, 则执行内部多个共享锁的release方法(如果出现失败将忽略)
  */
-public class ZookeeperLockDemo {
+public class ZkCuratorLockDemo {
 
     private static CuratorFramework client;
 
